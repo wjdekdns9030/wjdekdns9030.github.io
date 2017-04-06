@@ -6,16 +6,21 @@
 <title>폼 학습</title>
 <body>
 <section>
-<form action="http://hive.dju.ac.kr/~drkdhong/html5/formFormaction1.jsp"method=""postautocomplete="on">
+<form action="http://hive.dju.ac.kr/~drkdhong/html5/formSelect1.jsp"method="post">
 <fieldset>
-<legend>최단 시간 찾기</legend>
-<label for="fromx">출발:</label>
-<input type="text"id="fromx"name="fromx"placeholder="출발"/>
-<label for="tox">도착:</label>
-<input type="text"id="tox"name="tox"placeholder="도착"/>
-<button type="submit">자동차</button>
-<input type="submit"value="대중교통"formaction"http://hive.dju.ac.kr/~drkdhong/html5/formPublic1.jsp"/>
-<input type="submit"value="자전거"formaction"http://hive.dju.ac.kr/~drkdhong/html5/formBike1.jsp"/>
+<legend>식사 선택</legend>
+<label for="time">시간</label>
+<select id="timex"name="mealtime">
+<option value="아침">아침</option>
+<option value="점심">점심</option>
+<option value="저녁"selected>저녁</option></select>
+<label for="mealx">식사</label>
+<select id="mealx"name="meal">
+<option value="백미">백미</option>
+<option value="현미">현미</option>
+<option value="김치">김치</option>
+<option value="라면"selected>라면</option></select>
+<button type="submit">등록</button>
 </fieldset>
 </form>
 </section>
